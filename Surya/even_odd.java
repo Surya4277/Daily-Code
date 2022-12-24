@@ -2,36 +2,31 @@ package Surya;
 
 import java.util.Scanner;
 
-public class even_odd extends Single_Inherit{
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		even_odd obj=new even_odd();
-		obj.accept();
-
-	}
-	public void accept()
+public class even_odd 
+{
+	public static void demo()
 	{
-		int num;
-		Scanner ac=new Scanner(System.in);
-		System.out.println("Enter the number");
-		num=ac.nextInt();
-		fact(num);
-		demo_evn(num);
-		
-	}
+		try
+		{
+			int num;
 	
-	public void demo_evn(int num)
-	{
-		if(num%2==0)
-		{
-			System.out.println("It is even No:"+num);
+			Scanner sc = new Scanner(System.in);
+	
+			System.out.println("Enter a number:");
+			num = sc.nextInt();
+	
+			if(num % 2 == 0)
+			{
+				System.out.println("Number is Even");
+			}
+			else
+			{
+				System.out.println("Number is Odd");
+			}
 		}
-		else
+		catch(Exception e)
 		{
-			System.out.println("It is odd NO."+num);
+			System.out.println();
 		}
-		
-	}
-
+}
 }
